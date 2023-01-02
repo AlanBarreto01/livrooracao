@@ -1,0 +1,41 @@
+
+<div class="product-big-title-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="product-bit-title text-center">
+                    <h2>Minha Conta</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="single-product-area">
+    <div class="zigzag-bottom"></div>
+    <div class="container">
+        <div class="row">                
+            <div class="col-md-3">
+             
+            </div>
+            <div class="col-md-9">
+               {if="$profileMsg != ''"}
+                <div class="alert alert-success">
+                  {$profileMsg}
+                </div>
+               {/if}
+                {if="$profileError != ''"}
+                <div class="alert alert-danger">
+                   {$profileError}
+                </div>
+                  {/if}            
+                <form method="post" action="/profile">
+                    
+                    
+                    <button type="submit" class="btn btn-primary">Voltar</button>
+                
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
