@@ -9,7 +9,7 @@ class AdminUserController extends Controller
 {
     public function users()
     {
-        //User::verifyLogin();
+        
         $users = User::get();
 
         return view('admin.users',[
